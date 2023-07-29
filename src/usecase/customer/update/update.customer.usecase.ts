@@ -1,6 +1,5 @@
 import CustomerRepositoryInterface from "../../../domain/customer/repository/customer-repository.interface";
 import {InputUpdateCustomerDto, OutputUpdateCustomerDto} from "./update.customer.dto";
-import CustomerFactory from "../../../domain/customer/factory/customer.factory";
 import Address from "../../../domain/customer/value-object/address";
 
 export default class UpdateCustomerUsecase {
