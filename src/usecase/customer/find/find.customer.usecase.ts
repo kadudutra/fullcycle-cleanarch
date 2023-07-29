@@ -1,6 +1,5 @@
 import CustomerRepositoryInterface from "../../../domain/customer/repository/customer-repository.interface";
 import {InputFindCustomerDto, OutputFindCustomerDto} from "./find.customer.dto";
-import createSpy = jasmine.createSpy;
 
 export default class FindCustomerUsecase {
     private customerRepository: CustomerRepositoryInterface
@@ -15,7 +14,7 @@ export default class FindCustomerUsecase {
         return {
             id: customer.id,
             name: customer.name,
-            adrress: {
+            address: {
                 street: customer.Address.street,
                 city: customer.Address.city,
                 number: customer.Address.number,
