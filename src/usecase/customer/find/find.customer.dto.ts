@@ -3,7 +3,7 @@ export interface InputFindCustomerDto {
 }
 
 export interface OutputFindCustomerDto {
-    d: string;
+    id: string;
     name: string;
     adrress: {
         street: string;
